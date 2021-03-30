@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+<div style="display: flex; width: 100%; height: auto; justify-content: space-around">
+    <div style="display: flex; width: 40%; max-height: 22px; justify-content: space-around">
+        <label for="reg-filter">
+            <input type="checkbox" id="reg-filter">
+            <span>Чувствительность к регистру</span>
+        </label>
+        <input type="text" id="input">
+        <button id="num" onclick="getFromServer()">Найти по номеру</button>
+        <button id="text" onclick="getFromServer()">Найти по тексту</button>
+        <button onclick="getFromServer()">Дай дату</button>
+    </div>
+    <div style="display: flex; flex-direction: column" id="place">
+
+    </div>
+</div>
+</body>
+</html>
